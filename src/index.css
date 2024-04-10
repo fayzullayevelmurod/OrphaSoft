@@ -2,10 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+input {
+  outline: none;
+}
+
 body {
   @apply font-OpenSans font-normal;
 }
 
 .container {
   @apply max-w-[1160px] mx-auto;
+}
+.teal__btn {
+  @apply bg-teal p-[10px_15px] rounded-lg text-white flex items-center gap-[10px] w-fit hover:bg-[#2b8f8a] duration-300;
+}
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 49px;
+}
+
+/* core style end */
+.banner {
+  @apply bg-line bg-no-repeat bg-right;
+}
+.category__list a {
+  @apply relative;
+}
+.category__list a.active {
+  @apply text-teal font-bold;
+}
+.category__list a.active::before {
+  @apply content-[''] absolute bottom-0 left-0 w-[17px] h-[1px] bg-teal rounded-[20px];
+}
+
+.news__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  row-gap: 30px;
+  column-gap: 40px;
+  height: fit-content;
 }

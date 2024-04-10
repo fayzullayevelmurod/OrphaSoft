@@ -2,7 +2,7 @@ import { Header } from "./Header";
 
 export const Banner = () => {
   return (
-    <div className="m-[30px] bg-teal pt-10 rounded-[10px] text-white">
+    <div className="banner m-[30px] bg-teal pt-10 rounded-[10px] text-white">
       <div className="container">
         <Header />
         <p className="text-lg leading-[22px] mb-[18px] mt-[197px]">

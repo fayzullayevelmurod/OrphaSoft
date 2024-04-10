@@ -9,6 +9,9 @@ export default {
       colors: {
         teal: "#00AAA1",
       },
+      backgroundImage: {
+        line: "url('./assets/line-bg.png')",
+      },
     },
   },
   plugins: [],

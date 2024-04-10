@@ -8,11 +8,6 @@ export const Header = () => {
     setActiveLanguage(lang);
   };
 
-  const activeStyle = {
-    color: "red",
-    opacity: 1,
-  };
-
   return (
     <div className="flex items-center justify-between">
       <a href="#!">
@@ -64,8 +59,8 @@ export const Header = () => {
         <div className="flex gap-[14px]">
           <button
             aria-label="Ru language btn"
-            className={`text-white opacity-45 relative before:content-[''] before:bg-black before:rounded-full before:w-full before:h-[1px] before:absolute before:bottom-0 before:left-0 before:opacity-0 ${
-              activeLanguage === "ru" ? "opacity-100 before:opacity-100" : ""
+            className={`text-white relative before:content-[''] before:bg-black before:rounded-full before:w-full before:h-[1px] before:absolute before:bottom-0 before:left-0 before:opacity-0 ${
+              activeLanguage === "ru" ? "opacity-100 before:opacity-100" : "opacity-45"
             }`}
             onClick={() => switchLanguage("ru")}
           >
@@ -73,8 +68,8 @@ export const Header = () => {
           </button>
           <button
             aria-label="En language btn"
-            className={`text-white opacity-45 relative before:content-[''] before:bg-black before:rounded-full before:w-full before:h-[1px] before:absolute before:bottom-0 before:left-0 before:opacity-0 ${
-              activeLanguage === "en" ? "opacity-100 before:opacity-100" : ""
+            className={`text-white relative before:content-[''] before:bg-black before:rounded-full before:w-full before:h-[1px] before:absolute before:bottom-0 before:left-0 before:opacity-0 ${
+              activeLanguage === "en" ? "opacity-100 before:opacity-100" : "opacity-45"
             }`}
             onClick={() => switchLanguage("en")}
           >
