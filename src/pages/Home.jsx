@@ -1,9 +1,6 @@
-import { Banner } from "../components/Banner";
-import { Footer } from "../components/Footer";
-import { News } from "../components/News";
+import { Banner, Footer, News } from "../components";
 
-export const Home = () => {
-
+const Home = () => {
   return (
     <>
       <Banner />
@@ -77,3 +74,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

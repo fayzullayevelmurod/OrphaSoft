@@ -2,7 +2,7 @@ import assets from "../assets";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#232323] py-[100px] text-white text-center m-[56px_30px_30px_30px] rounded-none rounded-b-lg">
+    <footer className="bg-[#232323] py-[100px] text-white text-center m-[56px_30px_30px_30px] rounded-lg">
       <h1 className="text-[42px] leading-[50px]">Подпишитесь на наш блог</h1>
       <p className="text-[#EDFCF2] text-lg leading-[27px] font-light my-[25px]">
         Новые новости каждый день

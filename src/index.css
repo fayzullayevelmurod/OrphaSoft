@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
 input {
   outline: none;
 }
 
 body {
-  @apply font-OpenSans font-normal;
+  @apply font-OpenSans font-normal text-[#242628];
 }
 
 .container {
@@ -15,6 +22,15 @@ body {
 }
 .teal__btn {
   @apply bg-teal p-[10px_15px] rounded-lg text-white flex items-center gap-[10px] w-fit hover:bg-[#2b8f8a] duration-300;
+}
+.load__more-btn {
+  @apply bg-transparent text-teal flex items-center gap-[10px] w-fit;
+}
+.load__more-btn svg {
+  @apply rotate-90;
+}
+.load__more-btn.active svg {
+  @apply -rotate-90;
 }
 .title {
   font-size: 36px;
