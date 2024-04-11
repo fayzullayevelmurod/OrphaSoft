@@ -1,4 +1,4 @@
-import { Banner, DocsFile } from "../components";
+import { Banner, DocsFile, Footer } from "../components";
 const Treatment = () => {
   return (
     <>
@@ -6,6 +6,7 @@ const Treatment = () => {
       <div className="container">
         <DocsFile />
       </div>
+      <Footer />
     </>
   );
 };
