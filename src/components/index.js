@@ -6,3 +6,4 @@ export { Button } from "./Button";
 export { Comments } from "./Comments";
 export { Search } from "./Search";
 export { DocsFile } from "./DocsFile";
+export { CreateForm } from "./CreateForm";

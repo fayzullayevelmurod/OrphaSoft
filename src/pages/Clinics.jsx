@@ -52,7 +52,12 @@ const clinicsData = [
 const Clinics = () => {
   return (
     <>
-      <Banner />
+      <Banner
+        title="Клиники"
+        darkColor={true}
+        breadcrumb={true}
+        breadcrumbName="Клиники"
+      />
       <div className="container mt-16">
         <Search placeholder="Поиск по клиникам" />
         <div className="flex flex-wrap justify-between gap-x-[39px] gap-y-[30px] mt-16">

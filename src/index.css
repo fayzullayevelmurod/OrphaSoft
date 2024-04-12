@@ -8,6 +8,14 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background: url(./assets/icons/arrow-down.svg) no-repeat;
+  background-size: 26px 20px;
+  background-position: 95% center;
+}
 
 input {
   outline: none;
@@ -21,7 +29,13 @@ body {
   @apply max-w-[1160px] mx-auto;
 }
 .teal__btn {
-  @apply bg-teal p-[10px_15px] rounded-lg text-white flex items-center gap-[10px] w-fit hover:bg-[#2b8f8a] duration-300;
+  @apply bg-teal h-[50px] p-[10px_15px] text-[13px] rounded-lg text-white flex items-center gap-[10px] w-fit hover:bg-[#2b8f8a] duration-300;
+}
+.teal__btn-lg {
+  @apply bg-teal text-center justify-center p-[23px_42px] w-[454px] text-2xl rounded-lg text-white flex items-center gap-[10px] hover:bg-[#2b8f8a] duration-300;
+}
+.outline__btn {
+  @apply border border-teal text-[20px] rounded-[7px] py-[23px] px-10 text-teal hover:bg-teal duration-300 hover:text-white;
 }
 .load__more-btn {
   @apply bg-transparent text-teal flex items-center gap-[10px] w-fit;
@@ -37,7 +51,15 @@ body {
   font-weight: 600;
   line-height: 49px;
 }
-
+.form__input {
+  @apply bg-[#E7E7E7] h-[45px] py-[10px] border-b-[3px] border-teal outline-none px-5 text-sm font-light text-[#696F79] resize-none;
+}
+.form__input.textarea {
+  @apply h-[139px];
+}
+.form__input.big__textarea {
+  @apply h-[871px];
+}
 /* core style end */
 .banner {
   @apply bg-line bg-no-repeat bg-right;
@@ -58,4 +80,10 @@ body {
   row-gap: 30px;
   column-gap: 40px;
   height: fit-content;
+}
+.parent__box > div:last-child {
+  background: #000;
+}
+.parent__box > div:last-child {
+  @apply border-none;
 }

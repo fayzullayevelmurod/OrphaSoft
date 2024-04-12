@@ -30,7 +30,8 @@ const comments = [
   },
 ];
 
-export const Comments = () => {
+// eslint-disable-next-line react/prop-types
+export const Comments = ({ title, bottomComment }) => {
   if (!comments || !Array.isArray(comments)) {
     return <div>No comments available</div>;
   }
@@ -46,23 +47,22 @@ export const Comments = () => {
   };
   return (
     <>
-      <form className="mb-14">
-        <label className="inline-block text-[22px] leading-[33px] font-normal mb-6">
-          Добавить комментарий
-        </label>
-        <textarea
-          name="Добавить комментарий"
-          className="w-full min-h-[118px] h-[118px] border bg-[#F3F3F3] rounded-[4px] py-3 px-[18px] outline-teal placeholder:text-[#696F79] text-xs font-light mb-6"
-          placeholder="Введите свой комментарий..."
-        ></textarea>
-        <Button text="Отправить" rightIcon={true} />
-      </form>
-      <div className="space-y-[39px]">
+      {bottomComment ? null : (
+        <form className="mb-14">
+          <label className="inline-block text-[22px] leading-[33px] font-normal mb-6">
+            {title ? title : "Добавить комментарий"}
+          </label>
+          <textarea
+            name="Добавить комментарий"
+            className="w-full min-h-[118px] h-[118px] border bg-[#F3F3F3] rounded-[4px] py-3 px-[18px] outline-teal placeholder:text-[#696F79] text-xs font-light mb-6"
+            placeholder="Введите свой комментарий..."
+          ></textarea>
+          <Button text="Отправить" rightIcon={true} />
+        </form>
+      )}
+      <div className="space-y-[39px]  parent__box">
         {visibleComments.map((comment, index) => (
-          <div
-            className="border-b border-[#C4C4C4] pb-[39px] last:border-none"
-            key={index}
-          >
+          <div className="border-b border-[#C4C4C4] pb-[39px]" key={index}>
             <div className="flex items-center gap-4 flex-wrap pb-6 justify-between">
               <h5 className="text-2xl font-semibold">{comment.userName}</h5>
               <div className="flex items-center gap-[13px]">
@@ -82,7 +82,7 @@ export const Comments = () => {
             <p className="text-[#696F79] text-lg leading-[30px] font-light">
               {comment.desc}
             </p>
-            <span className="inline-block mt-6 text-[#242628] text-xs leading-[23.8px] font-light">
+            <span className="inline-block mt-6 text-[#242628] text-sm leading-[23.8px] font-light">
               {comment.date}
             </span>
           </div>
@@ -119,6 +119,19 @@ export const Comments = () => {
           </button>
         )}
       </div>
+      {bottomComment ? (
+        <form className="mb-14">
+          <label className="inline-block text-[22px] leading-[33px] font-normal mb-6">
+            {title ? title : "Добавить комментарий"}
+          </label>
+          <textarea
+            name="Добавить комментарий"
+            className="w-full min-h-[118px] h-[118px] border bg-[#F3F3F3] rounded-[4px] py-3 px-[18px] outline-teal placeholder:text-[#696F79] text-xs font-light mb-6"
+            placeholder="Введите свой комментарий..."
+          ></textarea>
+          <Button text="Отправить" rightIcon={true} />
+        </form>
+      ) : null}
     </>
   );
 };

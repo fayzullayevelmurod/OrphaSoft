@@ -19,6 +19,7 @@ import docs from "./icons/docs.svg";
 import download from "./icons/download.svg";
 import share from "./icons/share.svg";
 import userPortret from "./user-portret.png";
+import doctorImg from "./doctor.png";
 
 export default {
   logo,
@@ -42,4 +43,5 @@ export default {
   share,
   download,
   userPortret,
+  doctorImg,
 };

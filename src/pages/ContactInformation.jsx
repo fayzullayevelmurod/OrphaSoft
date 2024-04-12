@@ -3,7 +3,12 @@ import { Banner, Footer } from "../components";
 const ContactInformation = () => {
   return (
     <div className="overflow-hidden">
-      <Banner />
+      <Banner
+        title="Контактная информация"
+        darkColor={true}
+        breadcrumb={true}
+        breadcrumbName="Контактная информация"
+      />
       <div className="max-w-[96.8%] mx-auto mt-[21px] mb-[69px] w-full h-[570px]">
         <iframe
           id="inlineFrameExample"

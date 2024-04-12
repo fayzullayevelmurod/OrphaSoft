@@ -5,7 +5,11 @@ const Article = () => {
   return (
     <>
       <main>
-        <Banner />
+        <Banner
+          title="Редкие заболевания редки, но пациенты с редкими заболеваниями
+          многочисленны"
+          desc="Портал по редким заболеваниям и орфанным препаратам OrphaSoft"
+        />
         <div className="container">
           <div className="space-y-[43px] max-w-[760px] mx-auto mt-[62px]">
             <p className="text-[#696F79] leading-[30.6px] text-lg font-light">

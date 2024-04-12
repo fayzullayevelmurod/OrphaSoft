@@ -3,7 +3,11 @@ import { Banner, Footer, News } from "../components";
 const Home = () => {
   return (
     <>
-      <Banner />
+      <Banner
+        title="Редкие заболевания редки, но пациенты с редкими заболеваниями
+          многочисленны"
+        desc="Портал по редким заболеваниям и орфанным препаратам OrphaSoft"
+      />
       <div className="container">
         <h2 className="title">Популярные новости</h2>
         <div className="flex items-center justify-between mt-9 mb-16">
