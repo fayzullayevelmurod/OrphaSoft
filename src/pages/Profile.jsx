@@ -4,7 +4,7 @@ import { Comments, Header } from "../components";
 const Profile = () => (
   <>
     <div className="container">
-      <Header color={true} />
+      <Header color={true} darkColor={true} />
       <h1 className="my-14 text-[40px] leading-[54px] font-bold text-black">
         Профиль
       </h1>

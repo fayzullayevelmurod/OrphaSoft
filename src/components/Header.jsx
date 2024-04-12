@@ -195,7 +195,7 @@ export const Header = ({ color, darkColor }) => {
           <button
             aria-label="En language btn"
             className={`${
-              color ? "text-[#696F79] before:bg-teal" : "text-white"
+              color ? "text-[#696F79]" : "text-white"
             } relative before:content-[''] before:rounded-full before:w-full before:h-[1px] before:absolute before:bottom-0 before:left-0 before:opacity-0 ${
               activeLanguage === "en"
                 ? "opacity-100 before:opacity-100"
