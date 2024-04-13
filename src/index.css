@@ -31,6 +31,12 @@ body {
 .teal__btn {
   @apply bg-teal h-[50px] p-[10px_15px] text-[13px] rounded-lg text-white flex items-center gap-[10px] w-fit hover:bg-[#2b8f8a] duration-300;
 }
+.teal__btn.full {
+  @apply w-full;
+}
+.teal__btn.lg {
+  @apply text-[20px] h-[72px] px-6;
+}
 .teal__btn-lg {
   @apply bg-teal text-center justify-center p-[23px_42px] w-[454px] text-2xl rounded-lg text-white flex items-center gap-[10px] hover:bg-[#2b8f8a] duration-300;
 }
@@ -46,13 +52,22 @@ body {
 .load__more-btn.active svg {
   @apply -rotate-90;
 }
+.category__btn {
+  @apply border border-[#E7E7E7] px-[10px] py-[5px] text-sm font-light text-[#696F79];
+}
 .title {
   font-size: 36px;
   font-weight: 600;
   line-height: 49px;
 }
+.big__title {
+  @apply text-[40px] font-bold leading-[54px] text-black;
+}
 .form__input {
   @apply bg-[#E7E7E7] h-[45px] py-[10px] border-b-[3px] border-teal outline-none px-5 text-sm font-light text-[#696F79] resize-none;
+}
+.form__input.light {
+  @apply bg-[#FAFAFA] rounded-[6px] border-b-[1px] h-[65px] px-[18px];
 }
 .form__input.textarea {
   @apply h-[139px];
@@ -86,4 +101,11 @@ body {
 }
 .parent__box > div:last-child {
   @apply border-none;
+}
+.tendence__bg {
+  background: url(./assets/trends-bg.svg) no-repeat;
+  background-size: contain;
+  padding: 53px 56px;
+  margin: 110px 0 47px 0;
+  text-align: center;
 }

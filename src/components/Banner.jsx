@@ -10,7 +10,7 @@ export const Banner = (props) => {
       } banner m-[30px] pt-10 rounded-[10px] text-white`}
     >
       <div className="container">
-        <Header darkColor={true} />
+        <Header darkColor={darkColor} />
         <div className="mt-[197px]">
           {breadcrumb ? (
             <div className="py-[10px] w-fit mb-[27px] bg-teal px-4 rounded-[10px] flex gap-2">

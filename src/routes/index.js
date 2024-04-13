@@ -15,6 +15,8 @@ const ArticlesOnApproval = React.lazy(() =>
 );
 const Forums = React.lazy(() => import("../pages/Forums"));
 const ForumsTwo = React.lazy(() => import("../pages/ForumsTwo"));
+const ArticleApproval = React.lazy(() => import("../pages/ArticleApproval"));
+const ProfileSettings = React.lazy(() => import("../pages/ProfileSettings"));
 //
 const coreRoutes = [
   {
@@ -64,6 +66,14 @@ const coreRoutes = [
   {
     path: "/articles-on-approval",
     component: ArticlesOnApproval,
+  },
+  {
+    path: "/article-approval",
+    component: ArticleApproval,
+  },
+  {
+    path: "/profile-settings",
+    component: ProfileSettings,
   },
 ];
 

@@ -20,7 +20,8 @@ import download from "./icons/download.svg";
 import share from "./icons/share.svg";
 import userPortret from "./user-portret.png";
 import doctorImg from "./doctor.png";
-
+import article from "./article.png";
+import articleLeft from "./article-left.png";
 export default {
   logo,
   search,
@@ -44,4 +45,6 @@ export default {
   download,
   userPortret,
   doctorImg,
+  article,
+  articleLeft,
 };
