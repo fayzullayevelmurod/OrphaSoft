@@ -37,6 +37,9 @@ body {
 .teal__btn.lg {
   @apply text-[20px] h-[72px] px-6;
 }
+.teal__btn.xl {
+  @apply text-[20px] h-[60px] px-[27px];
+}
 .teal__btn-lg {
   @apply bg-teal text-center justify-center p-[23px_42px] w-[454px] text-2xl rounded-lg text-white flex items-center gap-[10px] hover:bg-[#2b8f8a] duration-300;
 }
@@ -59,6 +62,9 @@ body {
   font-size: 36px;
   font-weight: 600;
   line-height: 49px;
+}
+.default__title {
+  @apply text-2xl font-bold text-black;
 }
 .big__title {
   @apply text-[40px] font-bold leading-[54px] text-black;

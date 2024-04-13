@@ -18,6 +18,7 @@ const ForumsTwo = React.lazy(() => import("../pages/ForumsTwo"));
 const ArticleApproval = React.lazy(() => import("../pages/ArticleApproval"));
 const ProfileSettings = React.lazy(() => import("../pages/ProfileSettings"));
 const UserManagement = React.lazy(() => import("../pages/UserManagement"));
+const PersonalArea = React.lazy(() => import("../pages/PersonalArea"));
 //
 const coreRoutes = [
   {
@@ -80,6 +81,11 @@ const coreRoutes = [
     path: "/user-management",
     component: UserManagement,
   },
+  {
+    path: "/personal-area",
+    component: PersonalArea,
+  },
+  // PersonalArea
 ];
 
 const routes = [...coreRoutes];
