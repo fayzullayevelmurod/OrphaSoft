@@ -17,6 +17,7 @@ const Forums = React.lazy(() => import("../pages/Forums"));
 const ForumsTwo = React.lazy(() => import("../pages/ForumsTwo"));
 const ArticleApproval = React.lazy(() => import("../pages/ArticleApproval"));
 const ProfileSettings = React.lazy(() => import("../pages/ProfileSettings"));
+const UserManagement = React.lazy(() => import("../pages/UserManagement"));
 //
 const coreRoutes = [
   {
@@ -74,6 +75,10 @@ const coreRoutes = [
   {
     path: "/profile-settings",
     component: ProfileSettings,
+  },
+  {
+    path: "/user-management",
+    component: UserManagement,
   },
 ];
 
