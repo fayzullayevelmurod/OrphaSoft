@@ -19,6 +19,10 @@ const ArticleApproval = React.lazy(() => import("../pages/ArticleApproval"));
 const ProfileSettings = React.lazy(() => import("../pages/ProfileSettings"));
 const UserManagement = React.lazy(() => import("../pages/UserManagement"));
 const PersonalArea = React.lazy(() => import("../pages/PersonalArea"));
+const ArticleOld = React.lazy(() => import("../pages/ArticleOld"));
+const Products = React.lazy(() => import("../pages/Products"));
+const Favorites = React.lazy(() => import("../pages/Favorites"));
+const Basket = React.lazy(() => import("../pages/Basket"));
 //
 const coreRoutes = [
   {
@@ -85,7 +89,23 @@ const coreRoutes = [
     path: "/personal-area",
     component: PersonalArea,
   },
-  // PersonalArea
+  {
+    path: "/article-old",
+    component: ArticleOld,
+  },
+  {
+    path: "/products",
+    component: Products,
+  },
+  {
+    path: "/favorites",
+    component: Favorites,
+  },
+  {
+    path: "/basket",
+    component: Basket,
+  },
+  //
 ];
 
 const routes = [...coreRoutes];

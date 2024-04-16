@@ -14,7 +14,7 @@ export const Footer = () => {
           placeholder="Ваш email"
         />
         <button
-          className="teal__btn absolute top-0 right-[-30px] h-full"
+          className="teal__btn absolute top-0 right-[-30px] h-full footer__btn"
           type="submit"
           aria-label="Подписаться кнопка"
         >

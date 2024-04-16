@@ -28,6 +28,9 @@ body {
 .container {
   @apply max-w-[1160px] mx-auto;
 }
+.container__xl {
+  @apply max-w-[1534px] mx-auto;
+}
 .teal__btn {
   @apply bg-teal h-[50px] p-[10px_15px] text-[13px] rounded-lg text-white flex items-center gap-[10px] w-fit hover:bg-[#2b8f8a] duration-300;
 }
@@ -114,4 +117,14 @@ body {
   padding: 53px 56px;
   margin: 110px 0 47px 0;
   text-align: center;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+  column-gap: 94px;
+  row-gap: 52px;
+}
+
+.footer__btn {
+  height: 100%;
 }

@@ -22,6 +22,13 @@ import userPortret from "./user-portret.png";
 import doctorImg from "./doctor.png";
 import article from "./article.png";
 import articleLeft from "./article-left.png";
+import arrowDown from "./icons/arrow-down-white.svg";
+import heart from "./icons/heart.svg";
+import cart from "./icons/cart.svg";
+import productImg1 from "./product-1.png";
+import selectArrow from "./icons/select-arrow.svg";
+import warningIcon from "./icons/warning.svg";
+import notepad from "./icons/notepad.svg";
 export default {
   logo,
   search,
@@ -47,4 +54,11 @@ export default {
   doctorImg,
   article,
   articleLeft,
+  arrowDown,
+  heart,
+  cart,
+  productImg1,
+  selectArrow,
+  warningIcon,
+  notepad,
 };

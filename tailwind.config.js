@@ -12,6 +12,9 @@ export default {
       backgroundImage: {
         line: "url('./assets/line-bg.png')",
       },
+      boxShadow: {
+        parent: "0px 4px 4px 0px #00000040",
+      },
     },
   },
   plugins: [],

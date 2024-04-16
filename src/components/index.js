@@ -7,3 +7,4 @@ export { Comments } from "./Comments";
 export { Search } from "./Search";
 export { DocsFile } from "./DocsFile";
 export { CreateForm } from "./CreateForm";
+export { ProductsComp } from "./ProductsComp";
