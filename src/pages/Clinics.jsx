@@ -63,15 +63,15 @@ const Clinics = () => {
         <div className="flex flex-wrap justify-between gap-x-[39px] gap-y-[30px] mt-16">
           {clinicsData?.map((item, index) => (
             <div
-              className="bg-[#FAFAFA] rounded-[10px] w-[calc(51%_-_40px)]"
+              className="bg-[#FAFAFA] rounded-[10px] w-full md:w-[calc(51%_-_40px)]"
               key={index}
             >
-              <div className="border-b border-[#E7E7E7] pt-[39px] pb-[24px]">
-                <h5 className="text-xs leading-[26px] font-semibold px-[30px]">
+              <div className="border-b border-[#E7E7E7] sm:pt-[39px] sm:pb-[24px] py-4">
+                <h5 className="text-xs leading-[26px] font-semibold sm:px-[30px] px-4">
                   {item.title}
                 </h5>
               </div>
-              <div className="pt-6 pb-[38px] pl-[30px] pr-[23px]">
+              <div className="sm:pt-6 sm:pb-[38px] sm:pl-[30px] sm:pr-[23px] p-4">
                 <div className="space-y-2">
                   <p className="text-xs leading-[26px] font-normal">
                     Адрес:{" "}
