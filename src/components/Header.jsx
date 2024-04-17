@@ -2,10 +2,23 @@
 import { useState } from "react";
 import assets from "../assets";
 import { SearchPanel } from "./SearchPanel";
+import { Register } from "./Register";
 
 export const Header = ({ color, darkColor }) => {
   const [activeLanguage, setActiveLanguage] = useState("ru");
   const [active, setActive] = useState(false);
+  const [openSearch, setOpenSearch] = useState(false);
+  const [openRegister, setOpenRegister] = useState(false);
+
+  const handleOpenSearch = () => {
+    setOpenSearch(!openSearch);
+    document.body.classList.toggle("hidden-y");
+  };
+  const handleOpenRegister = () => {
+    setOpenRegister(!openRegister);
+    document.body.classList.toggle("hidden-y");
+    console.log("s");
+  };
 
   const switchLanguage = (lang) => {
     setActiveLanguage(lang);
@@ -144,7 +157,7 @@ export const Header = ({ color, darkColor }) => {
         </ul>
         <div className="line w-[1px] h-[20px] bg-white"></div>
         <div className="flex gap-[30px]">
-          <button>
+          <button onClick={handleOpenSearch}>
             {color ? (
               <svg
                 width="24"
@@ -170,8 +183,8 @@ export const Header = ({ color, darkColor }) => {
               />
             )}
           </button>
-          {/* <SearchPanel /> */}
-          <button>
+          <SearchPanel openSearch={openSearch} />
+          <button onClick={handleOpenRegister}>
             {color ? (
               <svg
                 width="24"
@@ -201,6 +214,10 @@ export const Header = ({ color, darkColor }) => {
               <img src={assets.user} alt="search icon" width="24" height="24" />
             )}
           </button>
+          <Register
+            openRegister={openRegister}
+            handleOpenRegister={handleOpenRegister}
+          />
         </div>
         <div
           className={`w-[1px] line h-[20px] ${

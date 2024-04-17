@@ -33,6 +33,8 @@ import nextBtn from "./icons/next-btn.svg";
 import plus from "./icons/plus.svg";
 import file from "./icons/file.svg";
 import user2 from "./icons/user2.svg";
+import eye from "./icons/eye.svg";
+import google from "./icons/google.svg";
 
 export default {
   logo,
@@ -69,5 +71,7 @@ export default {
   nextBtn,
   plus,
   file,
-  user2
+  user2,
+  eye,
+  google,
 };

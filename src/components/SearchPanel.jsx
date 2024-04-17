@@ -1,8 +1,13 @@
 import { Search } from "./Search";
 
-export const SearchPanel = () => {
+// eslint-disable-next-line react/prop-types
+export const SearchPanel = ({ openSearch }) => {
   return (
-    <div className="absolute w-full top-[125px] left-0 bg-white z-[999] pt-[115px] pb-8 h-full">
+    <div
+      className={`fixed w-full top-[125px] duration-300 origin-top left-0 bg-white z-[999] pt-[115px] pb-8 h-full ${
+        openSearch ? "scale-y-100" : "scale-y-0"
+      }`}
+    >
       <div className="text-center mx-auto max-w-[995px]">
         <h3 className="text-[52px] leading-[62px] text-[#383434] font-normal pb-16">
           Поиск

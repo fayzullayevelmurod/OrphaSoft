@@ -24,6 +24,9 @@ input {
 body {
   @apply font-OpenSans font-normal text-[#242628];
 }
+body.hidden-y {
+  overflow: hidden;
+}
 
 .container {
   @apply max-w-[1160px] mx-auto;
@@ -74,6 +77,9 @@ body {
 }
 .form__input {
   @apply bg-[#E7E7E7] h-[45px] py-[10px] border-b-[3px] border-teal outline-none px-5 text-sm font-light text-[#696F79] resize-none;
+}
+.form__input.white {
+  @apply bg-[#FAFAFA] border-b;
 }
 .form__input.light {
   @apply bg-[#FAFAFA] rounded-[6px] border-b-[1px] h-[65px] px-[18px];
@@ -286,4 +292,73 @@ body {
   padding: 15px 18px;
   border: 1px solid #c2c2c2;
   border-radius: 5px;
+}
+.text__input:checked + .text__sm::after {
+  display: block;
+}
+.text__sm {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  /* margin-top: 16px; */
+  display: block;
+}
+.text__sm::before {
+  content: "";
+  position: absolute;
+  background: #00aaa1;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.text__sm::after {
+  content: "";
+  position: absolute;
+  background: #00aaa1;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(./assets/icons/check.svg) no-repeat;
+  background-position: center;
+  display: none;
+}
+.checked__input:checked + .checked__text::after,
+.checked__input:checked + .checked__text::before {
+  display: block;
+  border-color: #00aaa1;
+}
+.checked__text {
+  position: relative;
+  padding-left: 33px;
+  color: #242628;
+  display: block;
+}
+.checked__text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #696f79;
+}
+.checked__text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00aaa1;
+  display: none;
 }
