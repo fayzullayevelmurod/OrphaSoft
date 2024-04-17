@@ -362,3 +362,9 @@ body.hidden-y {
   background: #00aaa1;
   display: none;
 }
+@media screen and (max-width: 650px) {
+  .black__btn {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
