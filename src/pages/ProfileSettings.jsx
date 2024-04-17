@@ -11,9 +11,9 @@ const ProfileSettings = () => {
   return (
     <div className="container mb-[88px]">
       <Header color={true} darkColor={true} />
-      <h2 className="big__title mt-[44px] mb-[56px]">Настройки профиля</h2>
-      <div className="flex items-center justify-between gap-[125px]">
-        <div className="relative w-[317px] h-[300px]">
+      <h2 className="big__title sm:mt-[44px] my-6 sm:mb-[56px]">Настройки профиля</h2>
+      <div className="flex md:flex-row flex-col  md:items-center justify-between lg:gap-[125px] gap-4">
+        <div className="relative sm:w-[317px] w-full h-[300px]">
           <img
             className="rounded-[37px] w-full h-full object-cover"
             src={selectedImage || assets.doctorImg}
@@ -35,8 +35,8 @@ const ProfileSettings = () => {
           />
         </div>
         <form className="flex-1 space-y-[18px]">
-          <div className="flex items-center gap-[23px]">
-            <label className="inline-block text-[20px] text-black w-[132px] text-right">
+          <div className="flex sm:flex-row flex-col sm:items-center gap-[23px]">
+            <label className="inline-block text-[20px] text-black sm:w-[132px] sm:text-right">
               Имя
             </label>
             <input
@@ -46,8 +46,8 @@ const ProfileSettings = () => {
               placeholder=" Татьяна"
             />
           </div>
-          <div className="flex items-center gap-[23px]">
-            <label className="inline-block text-[20px] text-black w-[132px] text-right">
+          <div className="flex sm:flex-row flex-col sm:items-center gap-[23px]">
+            <label className="inline-block text-[20px] text-black sm:w-[132px] sm:text-right">
               Фамилия
             </label>
             <input
@@ -57,8 +57,8 @@ const ProfileSettings = () => {
               placeholder="Иванова"
             />
           </div>
-          <div className="flex items-center gap-[23px]">
-            <label className="inline-block text-[20px] text-black w-[132px] text-right">
+          <div className="flex sm:flex-row flex-col sm:items-center gap-[23px]">
+            <label className="inline-block text-[20px] text-black sm:w-[132px] sm:text-right">
               Отчество
             </label>
             <input
@@ -76,8 +76,8 @@ const ProfileSettings = () => {
       <div className="mt-6">
         <h2 className="big__title mb-[26px]">Сменить пароль</h2>
         <form className="flex-1 space-y-[18px] max-w-[593px]">
-          <div className="flex items-center gap-[23px]">
-            <label className="inline-block text-[20px] text-black whitespace-nowrap min-w-[224px] text-right">
+          <div className="flex sm:items-center sm:flex-row flex-col gap-[23px]">
+            <label className="inline-block text-[20px] text-black whitespace-nowrap sm:min-w-[224px] sm:text-right">
               Старый пароль
             </label>
             <input
@@ -86,8 +86,8 @@ const ProfileSettings = () => {
               name="password"
             />
           </div>
-          <div className="flex items-center gap-[23px]">
-            <label className="inline-block text-[20px] text-black whitespace-nowrap min-w-[224px] text-right">
+          <div className="flex sm:items-center sm:flex-row flex-col gap-[23px]">
+            <label className="inline-block text-[20px] text-black whitespace-nowrap sm:min-w-[224px] sm:text-right">
               Новый пароль
             </label>
             <input
@@ -96,8 +96,8 @@ const ProfileSettings = () => {
               name="password"
             />
           </div>
-          <div className="flex items-center gap-[23px]">
-            <label className="inline-block text-[20px] text-black whitespace-nowrap min-w-[224px] text-right">
+          <div className="flex sm:items-center sm:flex-row flex-col gap-[23px]">
+            <label className="inline-block text-[20px] text-black whitespace-nowrap sm:min-w-[224px] sm:text-right">
               Подтвердите пароль
             </label>
             <input
@@ -119,8 +119,8 @@ const ProfileSettings = () => {
       <div className="mt-6">
         <h2 className="big__title mb-[26px]">Сменить почту</h2>
         <form className="flex-1 space-y-[18px] max-w-[593px]">
-          <div className="flex items-center gap-[23px]">
-            <label className="inline-block text-[20px] text-black whitespace-nowrap min-w-[224px] text-right">
+          <div className="flex sm:items-center sm:flex-row flex-col gap-[23px]">
+            <label className="inline-block text-[20px] text-black whitespace-nowrap sm:min-w-[224px] sm:text-right">
               Старая почта
             </label>
             <input
@@ -130,8 +130,8 @@ const ProfileSettings = () => {
               placeholder="123@mail.com"
             />
           </div>
-          <div className="flex items-center gap-[23px]">
-            <label className="inline-block text-[20px] text-black whitespace-nowrap min-w-[224px] text-right">
+          <div className="flex sm:items-center sm:flex-row flex-col gap-[23px]">
+            <label className="inline-block text-[20px] text-black whitespace-nowrap sm:min-w-[224px] sm:text-right">
               Новая почта
             </label>
             <input

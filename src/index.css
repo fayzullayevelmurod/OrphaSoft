@@ -195,7 +195,7 @@ body {
     padding: 20px;
     margin: 0;
   }
-  .tendence__bg h3{
+  .tendence__bg h3 {
     font-size: 24px;
   }
 }
@@ -207,6 +207,16 @@ body {
   .teal__btn-lg {
     padding: 15px 20px;
     font-size: 16px;
+  }
+  .form__input.light {
+    height: 50px;
+  }
+  .teal__btn.lg {
+    height: 50px;
+  }
+  .big__title {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
