@@ -98,7 +98,7 @@ const Article = () => {
           </div>
           <div className="w-full h-[0.5px] bg-[#C4C4C4]"></div>
           <div className="max-w-[800px] mx-auto mt-8">
-            <div className="mb-[66px] flex items-center justify-between">
+            <div className="mb-[66px] flex-wrap gap-4 flex items-center justify-between">
               <div className="flex items-center gap-[30px]">
                 <img
                   src={assets.userAvatar}
