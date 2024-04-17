@@ -1,14 +1,18 @@
 import assets from "../assets";
-import { Banner, Comments, Footer, News } from "../components";
+import { Comments, Footer, News, SliderBanner } from "../components";
 
 const Article = () => {
   return (
     <>
       <main>
-        <Banner
+        {/* <Banner
           title="Редкие заболевания редки, но пациенты с редкими заболеваниями
           многочисленны"
           desc="Портал по редким заболеваниям и орфанным препаратам OrphaSoft"
+        /> */}
+        <SliderBanner
+          title="Высокий уровень вовлечения представителей."
+          bannerBg={true}
         />
         <div className="container">
           <div className="space-y-[43px] max-w-[760px] mx-auto mt-[62px]">

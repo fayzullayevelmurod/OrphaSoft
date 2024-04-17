@@ -1,5 +1,5 @@
 import assets from "../assets";
-import { Banner, Button, Search } from "../components";
+import { Button, Search, SliderBanner } from "../components";
 
 const doctorsData = [
   {
@@ -31,7 +31,7 @@ const doctorsData = [
 const Doctors = () => {
   return (
     <>
-      <Banner
+      <SliderBanner
         title="Врачи"
         darkColor={true}
         breadcrumb={true}

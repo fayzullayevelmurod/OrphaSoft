@@ -13,7 +13,7 @@ const PersonalArea = () => {
       </div>
       <div className="space-y-[23px] mt-[31px]">
         <h3 className="default__title">Мед. Специалист</h3>
-        <div className="flex gap-[14px]">
+        <div className="flex gap-[14px] flex-wrap">
           <a className="teal__btn xl" href="#!">
             Отправить документы о квалификации
           </a>
@@ -24,7 +24,7 @@ const PersonalArea = () => {
       </div>
       <div className="space-y-[23px] mt-[31px]">
         <h3 className="default__title">Администратор</h3>
-        <div className="flex gap-[14px]">
+        <div className="flex gap-[14px] flex-wrap">
           <a className="teal__btn xl" href="#!">
             Управление пользователями
           </a>

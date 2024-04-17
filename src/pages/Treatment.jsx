@@ -1,8 +1,8 @@
-import { Banner, DocsFile, Footer } from "../components";
+import {  DocsFile, Footer, SliderBanner } from "../components";
 const Treatment = () => {
   return (
     <>
-      <Banner
+      <SliderBanner
         title="Контактная информация"
         darkColor={true}
         breadcrumb={true}

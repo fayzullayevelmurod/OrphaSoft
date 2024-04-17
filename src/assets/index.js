@@ -29,6 +29,11 @@ import productImg1 from "./product-1.png";
 import selectArrow from "./icons/select-arrow.svg";
 import warningIcon from "./icons/warning.svg";
 import notepad from "./icons/notepad.svg";
+import nextBtn from "./icons/next-btn.svg";
+import plus from "./icons/plus.svg";
+import file from "./icons/file.svg";
+import user2 from "./icons/user2.svg";
+
 export default {
   logo,
   search,
@@ -61,4 +66,8 @@ export default {
   selectArrow,
   warningIcon,
   notepad,
+  nextBtn,
+  plus,
+  file,
+  user2
 };

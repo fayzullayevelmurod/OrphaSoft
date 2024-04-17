@@ -1,8 +1,11 @@
-import { Banner, DocsFile } from "../components";
+import { DocsFile, SliderBanner } from "../components";
 
 const ArticlesOnApproval = () => (
   <>
-    <Banner title="Статьи на рецензию" darkColor={true} />
+    <SliderBanner
+      title="Высокий уровень вовлечения представителей."
+      bannerBg={true}
+    />
     <div className="container mb-[30px]">
       <DocsFile />
     </div>

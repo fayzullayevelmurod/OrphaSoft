@@ -23,6 +23,7 @@ const ArticleOld = React.lazy(() => import("../pages/ArticleOld"));
 const Products = React.lazy(() => import("../pages/Products"));
 const Favorites = React.lazy(() => import("../pages/Favorites"));
 const Basket = React.lazy(() => import("../pages/Basket"));
+const Chat = React.lazy(() => import("../pages/Chat"));
 //
 const coreRoutes = [
   {
@@ -104,6 +105,10 @@ const coreRoutes = [
   {
     path: "/basket",
     component: Basket,
+  },
+  {
+    path: "/chat",
+    component: Chat,
   },
   //
 ];

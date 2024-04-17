@@ -1,4 +1,4 @@
-import { Banner, Button, Footer, Search } from "../components";
+import { Button, Footer, Search, SliderBanner } from "../components";
 const clinicsData = [
   {
     title: "Детская клиническая больница № 13 им. Филатова",
@@ -52,7 +52,7 @@ const clinicsData = [
 const Clinics = () => {
   return (
     <>
-      <Banner
+      <SliderBanner
         title="Клиники"
         darkColor={true}
         breadcrumb={true}

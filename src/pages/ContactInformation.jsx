@@ -1,9 +1,9 @@
 import assets from "../assets";
-import { Banner, Footer } from "../components";
+import { Footer, SliderBanner } from "../components";
 const ContactInformation = () => {
   return (
     <div className="overflow-hidden">
-      <Banner
+      <SliderBanner
         title="Контактная информация"
         darkColor={true}
         breadcrumb={true}
