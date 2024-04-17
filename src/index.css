@@ -204,6 +204,12 @@ body.hidden-y {
   .menu button {
     color: #fff;
   }
+  .search__btn {
+    color: black !important;
+  }
+  .search__box svg path {
+    stroke: #696f79 !important;
+  }
   .menu button::before {
     background: #000;
   }

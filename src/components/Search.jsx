@@ -1,6 +1,7 @@
 // eslint-disable-next-line react/prop-types
 export const Search = ({ placeholder }) => (
-  <div className="relative border-b border-[#00AAA1] w-full h-16 bg-[#FAFAFA] rounded-md overflow-hidden">
+  <div className="relative search__box border-b border-[#00AAA1] w-full h-16 bg-[#FAFAFA] rounded-md overflow-hidden">
+    
     <input
       className="bg-transparent w-full h-full px-[29px] text-[#696F79] text-base font-light"
       type="search"

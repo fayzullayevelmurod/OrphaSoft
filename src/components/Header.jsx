@@ -183,7 +183,10 @@ export const Header = ({ color, darkColor }) => {
               />
             )}
           </button>
-          <SearchPanel openSearch={openSearch} />
+          <SearchPanel
+            handleOpenSearch={handleOpenSearch}
+            openSearch={openSearch}
+          />
           <button onClick={handleOpenRegister}>
             {color ? (
               <svg
