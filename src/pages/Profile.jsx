@@ -5,7 +5,7 @@ const Profile = () => (
   <>
     <div className="container">
       <Header color={true} darkColor={true} />
-      <h1 className="my-14 text-[40px] leading-[54px] font-bold text-black">
+      <h1 className="sm:my-14 my-6 sm:text-[40px] text-3xl leading-[54px] font-bold text-black">
         Профиль
       </h1>
       <div className="flex flex-wrap gap-10 mb-[46px]">
@@ -14,7 +14,7 @@ const Profile = () => (
           src={assets.doctorImg}
           alt="doctor img"
         />
-        <div className="flex-1 ">
+        <div className="flex-1 sm:min-w-[400px]">
           <div className="text-black flex gap-3 items-center mb-[30px]">
             <h5 className="text-2xl font-normal">Иванова Татьяна Сергеевна</h5>
             <div className="flex items-center gap-1">
@@ -43,7 +43,7 @@ const Profile = () => (
         </div>
       </div>
     </div>
-    <div className="max-w-[793px] mx-auto mb-8">
+    <div className="lg:max-w-[793px] max-w-[95%] mx-auto mb-8">
       <Comments />
     </div>
   </>

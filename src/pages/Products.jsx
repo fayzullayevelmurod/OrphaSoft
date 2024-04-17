@@ -56,7 +56,7 @@ const Products = () => {
             </div>
           </div>
         </div>
-        <div className="border border-[#E7DCDC] mt-[54px] mb-[76px] py-[30px] px-[21px] shadow-parent">
+        <div className="border border-[#E7DCDC] mt-[54px] mb-[76px] py-[30px] px-[21px] shadow-md">
           <ProductsComp />
         </div>
       </div>

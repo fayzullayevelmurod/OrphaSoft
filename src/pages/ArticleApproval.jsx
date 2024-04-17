@@ -5,9 +5,9 @@ const ArticleApproval = () => {
   return (
     <>
       <Banner title="Высокий уровень вовлечения представителей." />
-      <div className="max-w-[760px] mx-auto space-y-6 text-[#696F79] text-lg leading-[31px] font-light">
+      <div className="lg:max-w-[760px] max-w-[95%] mx-auto space-y-6 text-[#696F79] text-lg leading-[31px] font-light">
         <p>
-          <div className="flex items-start mb-[-23px] gap-4">
+          <div className="flex items-start lg:mb-[-23px] gap-4">
             <span className="text-teal text-[64px] block leading-normal">
               Р
             </span>
@@ -28,7 +28,7 @@ const ArticleApproval = () => {
         </p>
         <p>
           <img
-            className="pl-[30px]"
+            className="pl-[30px] sm:w-auto w-full"
             src={assets.article}
             alt="article"
             align="right"
@@ -57,7 +57,7 @@ const ArticleApproval = () => {
           </h3>
         </div>
       </div>
-      <div className="max-w-[760px] mx-auto space-y-6 text-[#696F79] text-lg leading-[31px] font-light">
+      <div className="lg:max-w-[760px] max-w-[95%] mx-auto space-y-6 text-[#696F79] text-lg leading-[31px] font-light">
         <p>
           сложившаяся структура организации не даёт нам иного выбора, кроме
           определения своевременного выполнения сверхзадачи. Но реплицированные
@@ -65,7 +65,7 @@ const ArticleApproval = () => {
         </p>
         <p>
           <img
-            className="pr-[30px]"
+            className="pr-[30px] sm:w-auto w-full"
             src={assets.articleLeft}
             alt="atricle left"
             align="left"
@@ -85,9 +85,9 @@ const ArticleApproval = () => {
           переосмысления внешнеэкономических политик.
         </p>
       </div>
-      <div className="max-w-[760px] mx-auto mt-[60px]">
-        <div className="p-[50px] border-t-[4px] border-teal bg-[#EAFFFE] rounded-lg">
-          <p className="text-2xl">
+      <div className="lg:max-w-[760px] max-w-[95%] mx-auto mt-[60px]">
+        <div className="md:p-[50px] p-4 border-t-[4px] border-teal bg-[#EAFFFE] rounded-lg">
+          <p className="sm:text-2xl text-base">
             Господа, перспективное планирование создаёт предпосылки для
             инновационных методов управления процессами. Высокий уровень
             вовлечения представителей целевой аудитории является.
@@ -113,8 +113,8 @@ const ArticleApproval = () => {
         </div>
       </div>
       <div className="container my-8 h-[0.5px] bg-[#C4C4C4]"></div>
-      <div className="max-w-[760px] mx-auto mb-[108px]">
-        <div className="flex items-center justify-between">
+      <div className="lg:max-w-[760px] max-w-[95%] mx-auto mb-[108px]">
+        <div className="flex flex-wrap gap-y-4 items-center justify-between">
           <div className="flex items-center gap-[30px]">
             <img
               src={assets.userAvatar}

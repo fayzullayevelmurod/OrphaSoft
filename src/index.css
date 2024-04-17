@@ -165,11 +165,24 @@ body {
     transition: all 0.3s linear;
     @apply shadow-lg;
   }
+
   .menu.active {
     right: 0;
   }
   .menu ul {
     flex-direction: column;
+  }
+  .menu li a {
+    color: #fff;
+  }
+  .menu svg path {
+    stroke: #fff;
+  }
+  .menu button {
+    color: #fff;
+  }
+  .menu button::before {
+    background: #000;
   }
   .menu .line {
     display: none;
@@ -177,10 +190,23 @@ body {
   .hamburger__menu {
     display: block;
   }
+  .tendence__bg {
+    background: none;
+    padding: 20px;
+    margin: 0;
+  }
+  .tendence__bg h3{
+    font-size: 24px;
+  }
 }
 @media screen and (max-width: 768px) {
   .title {
     font-size: 30px;
+  }
+  .outline__btn,
+  .teal__btn-lg {
+    padding: 15px 20px;
+    font-size: 16px;
   }
 }
 

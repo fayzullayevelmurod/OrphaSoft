@@ -120,7 +120,7 @@ export const Comments = ({ title, bottomComment }) => {
         )}
       </div>
       {bottomComment ? (
-        <form className="mb-14">
+        <form className="sm:my-14 my-8">
           <label className="inline-block text-[22px] leading-[33px] font-normal mb-6">
             {title ? title : "Добавить комментарий"}
           </label>

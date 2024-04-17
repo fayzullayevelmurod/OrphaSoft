@@ -54,13 +54,13 @@ const formusData = [
 const ForumsTwo = () => (
   <>
     <Banner title="Форумы" darkColor={true} />
-    <div className="max-w-[960px] mx-auto mt-[60px] mb-12">
+    <div className="lg:max-w-[960px] max-w-[95%] mx-auto mt-[60px] mb-12">
       <Search placeholder="Поиск по форумам" />
       <div className="mt-[88px] space-y-1">
         {formusData?.map((item, index) => (
           <div
             key={index}
-            className="flex items-center gap-4 flex-wrap justify-between border-b border-[#E7E7E7] pb-7 pl-[100px] pr-[83px]"
+            className="flex items-center gap-4 flex-wrap justify-between border-b border-[#E7E7E7] pb-7 lg:pl-[100px] lg:pr-[83px]"
           >
             <div className="space-y-[10px] max-w-[566px]">
               <h5 className="leading-[29px] text-[22px] font-semibold">

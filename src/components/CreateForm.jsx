@@ -1,14 +1,14 @@
 // eslint-disable-next-line react/prop-types
 export const CreateForm = ({ btnText }) => (
   <form className="text-black mt-20">
-    <div className="flex flex-wrap gap-[17px] items-start">
+    <div className="flex flex-wrap sm:flex-row flex-col gap-[17px] items-start">
       <label className="text-2xl font-normal w-[134px]">Заголовок</label>
-      <input className="form__input flex-1" type="text" />
+      <input className="form__input flex-1 sm:w-auto w-full" type="text" />
     </div>
     <div className="flex flex-wrap gap-[17px] items-start mt-[50px] mb-[94px]">
       <label className="text-2xl font-normal w-[134px]">Категории</label>
-      <div className="">
-        <select className="form__input w-[196px]">
+      <div className="sm:w-fit w-full">
+        <select className="form__input sm:w-[196px] w-full">
           <option value="Категория 1">Категория 1</option>
           <option value="Категория 2">Категория 2</option>
           <option value="Категория 3">Категория 3</option>
@@ -35,18 +35,26 @@ export const CreateForm = ({ btnText }) => (
         </div>
       </div>
     </div>
-    <div className="flex flex-wrap gap-[17px] items-start mb-[50px]">
-      <label className="text-2xl font-normal w-[134px]">
+    <div className="flex sm:flex-row flex-col  flex-wrap gap-[17px] items-start mb-[50px]">
+      <label className="text-2xl font-normal sm:w-[134px] w-full">
         Краткое <br /> описание
       </label>
-      <textarea className="form__input flex-1 textarea" type="text" />
+      <textarea
+        className="form__input sm:w-auto w-full flex-1 textarea"
+        type="text"
+      />
     </div>
-    <div className="flex flex-wrap gap-[17px] items-start">
-      <label className="text-2xl font-normal w-[134px]">Текст статьи</label>
-      <textarea className="form__input flex-1 big__textarea" type="text" />
+    <div className="flex sm:flex-row flex-col flex-wrap gap-[17px] items-start">
+      <label className="text-2xl font-normal w-full sm:w-[134px]">
+        Текст статьи
+      </label>
+      <textarea
+        className="form__input sm:w-auto w-full flex-1 big__textarea"
+        type="text"
+      />
     </div>
-    <div className="mt-[30px] flex justify-between">
-      <div className="flex items-center gap-[50px]">
+    <div className="mt-[30px] flex flex-wrap gap-y-4 justify-between">
+      <div className="flex flex-wrap justify-between items-center gap-[50px]">
         <p className="text-black text-2xl">Превью</p>
         <button type="button" className="outline__btn">
           Прикрепить (.png, .jpeg)
