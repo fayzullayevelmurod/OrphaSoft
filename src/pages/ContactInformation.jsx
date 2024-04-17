@@ -9,7 +9,7 @@ const ContactInformation = () => {
         breadcrumb={true}
         breadcrumbName="Контактная информация"
       />
-      <div className="max-w-[96.8%] mx-auto mt-[21px] mb-[69px] w-full h-[570px]">
+      <div className="max-w-[96.8%] mx-auto mt-[21px] sm:mb-[69px] mb-8 w-full lg:h-[570px] h-[400px]">
         <iframe
           id="inlineFrameExample"
           title="Inline Frame Example"
@@ -34,8 +34,8 @@ const ContactInformation = () => {
           </p>
         </div>
 
-        <div className="flex gap-4 justify-between mt-6 px-[20px]">
-          <div className="max-w-[195px] w-full text-center border-[2px] border-[#000000] bg-[#F3F3F3] pt-6 pb-3">
+        <div className="flex gap-4 flex-wrap justify-between mt-6 sm:px-[20px]">
+          <div className="sm:max-w-[195px] min-w-[150px] flex-1 w-full text-center border-[2px] border-[#000000] bg-[#F3F3F3] pt-6 pb-3">
             <img
               className="mx-auto"
               src={assets.userPortret}
@@ -50,7 +50,7 @@ const ContactInformation = () => {
               Врач
             </span>
           </div>
-          <div className="max-w-[195px] w-full text-center border-[2px] border-[#000000] bg-[#F3F3F3] pt-6 pb-3">
+          <div className="sm:max-w-[195px] min-w-[150px] flex-1 w-full text-center border-[2px] border-[#000000] bg-[#F3F3F3] pt-6 pb-3">
             <img
               className="mx-auto"
               src={assets.userPortret}
@@ -65,7 +65,7 @@ const ContactInformation = () => {
               Врач
             </span>
           </div>
-          <div className="max-w-[195px] w-full text-center border-[2px] border-[#000000] bg-[#F3F3F3] pt-6 pb-3">
+          <div className="sm:max-w-[195px] min-w-[150px] flex-1 w-full text-center border-[2px] border-[#000000] bg-[#F3F3F3] pt-6 pb-3">
             <img
               className="mx-auto"
               src={assets.userPortret}

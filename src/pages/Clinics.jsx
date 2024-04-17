@@ -58,7 +58,7 @@ const Clinics = () => {
         breadcrumb={true}
         breadcrumbName="Клиники"
       />
-      <div className="container mt-16">
+      <div className="container md:mt-16 mt-6">
         <Search placeholder="Поиск по клиникам" />
         <div className="flex flex-wrap justify-between gap-x-[39px] gap-y-[30px] mt-16">
           {clinicsData?.map((item, index) => (

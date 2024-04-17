@@ -37,22 +37,22 @@ const Doctors = () => {
         breadcrumb={true}
         breadcrumbName="Врачи"
       />
-      <div className="container mb-[230px]">
+      <div className="container md:mb-[230px] mb-8">
         <Search />
         <div className="mt-16 space-y-[30px]">
           {doctorsData?.map((item, index) => (
             <div
               key={index}
-              className="flex items-start gap-10 justify-between"
+              className="flex flex-wrap items-start gap-10 justify-between"
             >
               <img
-                className="rounded-[37px]"
+                className="rounded-[37px] sm:w-auto w-full"
                 src={item.img}
                 alt="doctor img"
                 width="317"
                 height="299"
               />
-              <div className="bg-[#FAFAFA] flex-1 rounded-[10px]">
+              <div className="bg-[#FAFAFA] flex-1 rounded-[10px] sm:min-w-[450px]">
                 <div className="pt-[39px] pb-6 px-10 border-b border-[#E7E7E7]">
                   <p className="font-semibold leading-[26px] text-sm">
                     {item.name}
