@@ -10,8 +10,8 @@ const Home = () => {
       />
       <div className="container">
         <h2 className="title">Популярные новости</h2>
-        <div className="flex items-center justify-between mt-9 mb-16">
-          <ul className="flex items-center gap-[30px] category__list">
+        <div className="flex flex-wrap gap-y-4 items-center justify-between md:mt-9 md:mb-16 my-5">
+          <ul className="flex items-center lg:gap-[30px] gap-4 flex-wrap category__list">
             <li>
               <a
                 className="text-[#696F79] font-light leading-[25px] active"

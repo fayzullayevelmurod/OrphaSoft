@@ -4,9 +4,14 @@ import assets from "../assets";
 
 export const Header = ({ color, darkColor }) => {
   const [activeLanguage, setActiveLanguage] = useState("ru");
+  const [active, setActive] = useState(false);
 
   const switchLanguage = (lang) => {
     setActiveLanguage(lang);
+  };
+
+  const handleChangeActive = () => {
+    setActive(!active);
   };
 
   return (
@@ -65,7 +70,27 @@ export const Header = ({ color, darkColor }) => {
           <img src={assets.logo} alt="company logo" width="180" height="22" />
         )}
       </a>
-      <div className="flex items-center gap-[36px]">
+      <div
+        className={`flex items-center gap-[36px] menu ${
+          active ? "active" : ""
+        }`}
+      >
+        <button className="close__btn hidden" onClick={handleChangeActive}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
         <ul className="flex gap-[30px]">
           <li>
             <a
@@ -116,7 +141,7 @@ export const Header = ({ color, darkColor }) => {
             </a>
           </li>
         </ul>
-        <div className="w-[1px] h-[20px] bg-white"></div>
+        <div className="line w-[1px] h-[20px] bg-white"></div>
         <div className="flex gap-[30px]">
           <button>
             {color ? (
@@ -176,7 +201,9 @@ export const Header = ({ color, darkColor }) => {
           </button>
         </div>
         <div
-          className={`w-[1px] h-[20px] ${color ? "bg-[#696F79]" : "bg-white"}`}
+          className={`w-[1px] line h-[20px] ${
+            color ? "bg-[#696F79]" : "bg-white"
+          }`}
         ></div>
         <div className="flex gap-[14px]">
           <button
@@ -207,6 +234,22 @@ export const Header = ({ color, darkColor }) => {
           </button>
         </div>
       </div>
+      <button className="hamburger__menu hidden" onClick={handleChangeActive}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
     </div>
   );
 };

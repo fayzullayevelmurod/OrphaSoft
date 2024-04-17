@@ -11,7 +11,7 @@ export const Banner = (props) => {
     >
       <div className="container">
         <Header darkColor={darkColor} />
-        <div className="mt-[197px]">
+        <div className="lg:mt-[197px] mt-[100px]">
           {breadcrumb ? (
             <div className="py-[10px] w-fit mb-[27px] bg-teal px-4 rounded-[10px] flex gap-2">
               <a href="/">Главная /</a>
@@ -21,9 +21,9 @@ export const Banner = (props) => {
             </div>
           ) : null}
           {desc ? (
-            <p className="text-lg leading-[22px] mb-[18px]">{desc}</p>
+            <p className="md:text-lg text-sm leading-[22px] mb-[18px]">{desc}</p>
           ) : null}
-          <h1 className="font-normal text-[52px] leading-[62px] pb-[98px] max-w-[904px]">
+          <h1 className="font-normal lg:text-[52px] sm:text-3xl text-2xl lg:leading-[62px] md:pb-[98px] pb-[50px] max-w-[904px]">
             {title}
           </h1>
         </div>

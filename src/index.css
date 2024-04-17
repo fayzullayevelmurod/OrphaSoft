@@ -128,3 +128,82 @@ body {
 .footer__btn {
   height: 100%;
 }
+
+/* media */
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 95%;
+  }
+  .banner,
+  footer {
+    max-width: 95%;
+    width: 100%;
+    margin: 30px auto !important;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .banner {
+    padding: 2.5rem 20px;
+  }
+  .menu .close__btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    background: #00aaa1;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+    z-index: 99;
+    transition: all 0.3s linear;
+    @apply shadow-lg;
+  }
+  .menu.active {
+    right: 0;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu .line {
+    display: none;
+  }
+  .hamburger__menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .menu {
+    width: 100%;
+  }
+  .banner,
+  footer {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    max-width: 100%;
+    border-radius: 0;
+  }
+  footer {
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 26px;
+  }
+}
