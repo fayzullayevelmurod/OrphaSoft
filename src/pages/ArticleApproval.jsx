@@ -1,10 +1,13 @@
 import assets from "../assets";
-import { Banner } from "../components";
+import { Comments, News, SliderBanner } from "../components";
 
 const ArticleApproval = () => {
   return (
     <>
-      <Banner title="Высокий уровень вовлечения представителей." />
+      <SliderBanner
+        bannerBg={true}
+        title="Высокий уровень вовлечения представителей."
+      />
       <div className="lg:max-w-[760px] max-w-[95%] mx-auto space-y-6 text-[#696F79] text-lg leading-[31px] font-light">
         <p>
           <div className="flex items-start lg:mb-[-23px] gap-4">
@@ -27,12 +30,6 @@ const ArticleApproval = () => {
           переосмысления внешнеэкономических политик.
         </p>
         <p>
-          <img
-            className="pl-[30px] sm:w-auto w-full"
-            src={assets.article}
-            alt="article"
-            align="right"
-          />
           Значимость этих проблем настолько очевидна, что сплочённость команды
           профессионалов не оставляет шанса для системы массового участия.
           Имеется спорная точка зрения, гласящая примерно следующее: базовые
@@ -64,12 +61,6 @@ const ArticleApproval = () => {
           с зарубежных источников, современные исследования призваны к ответу.
         </p>
         <p>
-          <img
-            className="pr-[30px] sm:w-auto w-full"
-            src={assets.articleLeft}
-            alt="atricle left"
-            align="left"
-          />
           Равным образом, постоянный количественный рост и сфера нашей
           активности способствует повышению качества первоочередных требований.
           В частности, высокотехнологичная концепция общественного уклада в
@@ -114,7 +105,7 @@ const ArticleApproval = () => {
       </div>
       <div className="container my-8 h-[0.5px] bg-[#C4C4C4]"></div>
       <div className="lg:max-w-[760px] max-w-[95%] mx-auto mb-[108px]">
-        <div className="flex flex-wrap gap-y-4 items-center justify-between">
+        <div className="flex flex-wrap gap-y-4 items-center justify-between pb-8">
           <div className="flex items-center gap-[30px]">
             <img
               src={assets.userAvatar}
@@ -165,6 +156,10 @@ const ArticleApproval = () => {
             </a>
           </div>
         </div>
+        <Comments />
+      </div>
+      <div className="container mt-[58px] mb-[124px]">
+        <News length={3} showTitle={true} title="Вам может понравиться" />
       </div>
       <div className="container flex justify-between flex-wrap gap-4 mb-[88px]">
         <button className="border-[6px] border-[#FF0000] bg-[#C4C4C4] text-black max-w-[453px] h-[72px] w-full text-2xl font-semibold">

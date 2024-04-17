@@ -277,3 +277,13 @@ body {
   line-height: 19px;
   color: #000;
 }
+
+.search__btn {
+  color: #242628;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 15px 18px;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+}

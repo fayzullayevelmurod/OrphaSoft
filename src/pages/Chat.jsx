@@ -1,14 +1,21 @@
+import { useState } from "react";
 import assets from "../assets";
 import { Header } from "../components";
 
 const Chat = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
+
   return (
     <div className="container mb-12">
       <Header color={true} darkColor={true} />
 
       <div className="flex items-stretch mt-[90px] h-[1060px]">
         <div className="md:max-w-[414px] max-w-[300px] hidden sm:block  bg-teal py-3 rounded-lg relative">
-          <div className="flex items-center gap-[26px] px-6 justify-between pb-[23px] border-b border-black">
+          <div className="relative flex items-center gap-[26px] px-6 justify-between pb-[23px] border-b border-black">
             <div className="relative max-w-[300px] border border-black h-10 bg-[#E7E7E7B8] rounded-[10px] overflow-hidden ">
               <input
                 className="w-full placeholder:text-white text-xl text-white bg-transparent h-full pl-[43px]"
@@ -23,9 +30,18 @@ const Chat = () => {
                 height={17}
               />
             </div>
-            <button>
+            <button onClick={handleOpen}>
               <img src={assets.plus} alt="" />
             </button>
+            <div
+              className={`absolute top-full left-0 w-full h-[207px] duration-300 bg-white p-4 origin-top scale-y-0 ${
+                open ? "scale-y-100" : ""
+              }`}
+            >
+              <p className="text-black font-semibold text-base">
+                Групповой чатИндивидуальный чат
+              </p>
+            </div>
           </div>
           <div className="flex items-center gap-[9px] px-6 py-8 border-b border-black">
             <img

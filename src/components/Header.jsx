@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import assets from "../assets";
+import { SearchPanel } from "./SearchPanel";
 
 export const Header = ({ color, darkColor }) => {
   const [activeLanguage, setActiveLanguage] = useState("ru");
@@ -169,6 +170,7 @@ export const Header = ({ color, darkColor }) => {
               />
             )}
           </button>
+          {/* <SearchPanel /> */}
           <button>
             {color ? (
               <svg
