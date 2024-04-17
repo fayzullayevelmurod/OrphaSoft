@@ -45,22 +45,22 @@ export const DocsFile = () => (
       {docsData.map((item, index) => (
         <div
           key={index}
-          className="flex flex-wrap gap-4 items-center justify-between mt-[88px] last:border-none border-b border-[#E7E7E7] pb-8"
+          className="flex  gap-4 items-center justify-between sm:mt-[88px] mt-8 last:border-none border-b border-[#E7E7E7] pb-8"
         >
-          <div className="flex items-center gap-10">
-            <img src={assets.docs} alt="docs file img" width="60" height="83" />
+          <div className="flex flex-wrap items-center sm:gap-10 gap-4">
+            <img className="sm:w-[60px] sm:h-[83px] w-[45px]" src={assets.docs} alt="docs file img" width="60" height="83" />
             <div className="max-w-[560px]">
-              <h5 className="font-semibold leading-[28px] text-[22px] mb-[9px]">
+              <h5 className="font-semibold leading-[28px] text-lg sm:text-[22px] mb-[9px]">
                 {item.title}
               </h5>
-              <p className="leading-[25px] font-light text-[#696F79]">
+              <p className="sm:leading-[25px] sm:text-base text-sm font-light text-[#696F79]">
                 {item.desc}
               </p>
             </div>
           </div>
           <div className="flex gap-[20px]">
             <button aria-label="download button">
-              <img
+              <img className="min-w-[24px] min-h-[24px]"
                 src={assets.download}
                 alt="download img"
                 width="24"
@@ -68,7 +68,7 @@ export const DocsFile = () => (
               />
             </button>
             <button aria-label="share button">
-              <img src={assets.share} alt="share img" width="24" height="24" />
+              <img className="min-w-[24px] min-h-[24px]" src={assets.share} alt="share img" width="24" height="24" />
             </button>
           </div>
         </div>
