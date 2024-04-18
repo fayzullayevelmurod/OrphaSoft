@@ -14,7 +14,7 @@ const Chat = () => {
       <Header color={true} darkColor={true} />
 
       <div className="flex items-stretch mt-[90px] h-[1060px]">
-        <div className="md:max-w-[414px] sm:max-w-[300px] w-[150px] block  bg-teal py-3 rounded-lg relative">
+        <div className="md:max-w-[414px] sm:max-w-[300px] sm:w-fit w-[150px] block  bg-teal py-3 rounded-lg relative">
           <div className="relative flex sm:flex-row flex-col items-center gap-[26px] sm:px-6 px-4 justify-between pb-[23px] border-b border-black">
             <div className="relative max-w-[300px] border border-black h-10 bg-[#E7E7E7B8] rounded-[10px] overflow-hidden ">
               <input
@@ -34,16 +34,16 @@ const Chat = () => {
               <img src={assets.plus} alt="" />
             </button>
             <div
-              className={`absolute top-full sm:right-0 left-0 w-fit h-[207px] duration-300 bg-white p-4 origin-top scale-y-0 ${
+              className={`absolute top-full sm:right-0 text-center sm:left-auto right-auto left-0 shadow-2xl border border-black rounded-lg w-fit h-[207px] duration-300 bg-white p-4 origin-top scale-y-0 ${
                 open ? "scale-y-100" : ""
               }`}
             >
               <p className="text-black font-semibold text-base">
-                Групповой чатИндивидуальный чат
+                Групповой чат <br /> Индивидуальный чат
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-[9px] sm:px-6 px-4 py-8 border-b border-black">
+          <div className="flex items-center sm:justify-normal justify-between gap-[9px] sm:px-6 px-4 py-8 border-b border-black">
             <img
               className="rounded-full"
               src={assets.doctorImg}
@@ -70,7 +70,7 @@ const Chat = () => {
               <h4 className="sm:text-2xl text-base text-black font-bold">
                 Иванова Татьяна
               </h4>
-              <div className="sm:w-[17px] w-[10px] h-[10px] sm:max-h-[17px] bg-[#97FF46] rounded-full"></div>
+              <div className=" max-w-[17px] w-[10px] h-[10px] min-w-[10px] sm:max-h-[17px] bg-[#97FF46] rounded-full"></div>
             </div>
             <div className="pt-[69px] space-y-10 px-[33px]">
               <div className="flex items-center w-full gap-4 justify-end">

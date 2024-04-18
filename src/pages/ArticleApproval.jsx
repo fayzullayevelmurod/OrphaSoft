@@ -1,5 +1,5 @@
 import assets from "../assets";
-import { Comments, News, SliderBanner } from "../components";
+import { SliderBanner } from "../components";
 
 const ArticleApproval = () => {
   return (
@@ -8,6 +8,7 @@ const ArticleApproval = () => {
         bannerBg={true}
         title="Высокий уровень вовлечения представителей."
       />
+
       <div className="container">
         <div className="space-y-[43px] max-w-[760px] mx-auto mt-[62px]">
           <p className="text-[#696F79] leading-[30.6px] text-lg font-light">
@@ -72,7 +73,7 @@ const ArticleApproval = () => {
             зависит от переосмысления внешнеэкономических политик.
           </p>
         </div>
-        <div className="flex gap-[10px] max-w-[800px] mx-auto mt-[14px] mb-8">
+        <div className="flex gap-[10px] max-w-[800px] mx-auto my-8">
           <button
             className="py-[5px] px-[10px] border border-[#E7E7E7] text-[#696F79] text-xs leading-6 font-light"
             aria-label="Категория 1"
@@ -145,10 +146,6 @@ const ArticleApproval = () => {
               </a>
             </div>
           </div>
-          <Comments />
-        </div>
-        <div className="container mt-[58px] mb-[124px]">
-          <News length={3} showTitle={true} title="Вам может понравиться" />
         </div>
       </div>
       <div className="container flex justify-between flex-wrap gap-4 mb-[88px]">

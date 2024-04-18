@@ -189,7 +189,7 @@ export const Register = ({ openRegister, handleOpenRegister }) => {
               </div>
             </div>
           </div>
-          <button className="bg-teal rounded-[6px] w-full h-[64px] text-center px-4 flex items-center justify-center">
+          <button className="bg-teal rounded-[6px] w-full h-[64px] text-center text-white px-4 flex items-center justify-center">
             Зарегистрироваться
           </button>
         </div>
@@ -271,7 +271,7 @@ export const Register = ({ openRegister, handleOpenRegister }) => {
           </div>
           <p className="text-sm text-[#2D2D2D]">Забыли пароль?</p>
         </div>
-        <button className="bg-teal rounded-[6px] w-full h-[64px] text-center px-4 flex items-center justify-center">
+        <button className="bg-teal rounded-[6px] w-full h-[64px] text-white text-center px-4 flex items-center justify-center">
           Войти
         </button>
         <div className="flex items-center gap-[30px] my-8">
