@@ -4,7 +4,7 @@ import assets from "../assets";
 import { SearchPanel } from "./SearchPanel";
 import { Register } from "./Register";
 
-export const Header = ({ color, darkColor }) => {
+export const Header = ({ color, darkColor, className }) => {
   const [activeLanguage, setActiveLanguage] = useState("ru");
   const [active, setActive] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
@@ -31,8 +31,8 @@ export const Header = ({ color, darkColor }) => {
   return (
     <div
       className={`flex items-center justify-between ${
-        color ? "mt-[50px]" : ""
-      }`}
+        color ? "mt-[50px] " : ""
+      }${className}`}
     >
       <a href="/">
         {color ? (

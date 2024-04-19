@@ -103,7 +103,23 @@ body.hidden-y {
 .category__list a.active::before {
   @apply content-[''] absolute bottom-0 left-0 w-[17px] h-[1px] bg-teal rounded-[20px];
 }
-
+/* header */
+.black__header {
+  margin-top: 43px;
+}
+.top-z {
+  z-index: 100;
+}
+.black__header .hamburger__menu svg {
+  @apply w-7 h-7;
+}
+.black__header .hamburger__menu svg path {
+  @apply stroke-teal;
+}
+.black__header .close__icon path {
+  @apply fill-teal stroke-teal;
+}
+/* header */
 .news__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -164,9 +180,16 @@ body.hidden-y {
     left: 0;
   }
 }
+.header__right-btn svg path {
+  fill: #00aaa1 !important;
+  stroke: #00aaa1 !important;
+}
 @media screen and (max-width: 1095px) {
   .banner {
     padding: 2.5rem 20px;
+  }
+  .header__right-btn {
+    display: flex;
   }
   .menu .close__btn {
     display: block;
