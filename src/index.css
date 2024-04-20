@@ -397,3 +397,9 @@ body.hidden-y {
     font-size: 13px;
   }
 }
+
+.table__box {
+  overflow-y: visible !important;
+  /* height: calc(100vh - 380px); */
+  height: 100vh;
+}

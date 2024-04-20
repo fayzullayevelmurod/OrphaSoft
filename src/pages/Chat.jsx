@@ -97,7 +97,7 @@ const Chat = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-[10px] py-8 sm:px-[50px] px-4 border-t border-[#B2B2B2]">
+            <div className="flex items-center gap-[10px] sm:px-[50px] px-4 border-t border-[#B2B2B2]">
               <label
                 className="flex items-center cursor-pointer gap-[20px]"
                 htmlFor="file"
@@ -105,9 +105,9 @@ const Chat = () => {
                 <img className="sm:w-auto w-5" src={assets.file} alt="file" />
               </label>
               <input className="hidden" type="file" id="file" />
-              <input
+              <textarea
                 placeholder="Напишите здесь своё сообщение"
-                className="w-full sm:text-2xl text-xs placeholder:text-[#B2B2B2]"
+                className="w-full sm:py-8 py-[25px] sm:h-[100px] h-[66px] placeholder:whitespace-nowrap outline-none sm:text-2xl  text-xs placeholder:text-[#B2B2B2] resize-none"
               />
             </div>
           </div>
