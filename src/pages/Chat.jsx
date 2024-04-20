@@ -97,17 +97,18 @@ const Chat = () => {
                 </div>
               </div>
             </div>
-            <div className="py-8 sm:px-[50px] px-4 border-t border-[#B2B2B2]">
+            <div className="flex items-center gap-[10px] py-8 sm:px-[50px] px-4 border-t border-[#B2B2B2]">
               <label
                 className="flex items-center cursor-pointer gap-[20px]"
                 htmlFor="file"
               >
-                <img src={assets.file} alt="file" />
-                <span className="sm:text-2xl text-xs text-[#B2B2B2]">
-                  Напишите здесь своё сообщение
-                </span>
+                <img className="sm:w-auto w-5" src={assets.file} alt="file" />
               </label>
               <input className="hidden" type="file" id="file" />
+              <input
+                placeholder="Напишите здесь своё сообщение"
+                className="w-full sm:text-2xl text-xs placeholder:text-[#B2B2B2]"
+              />
             </div>
           </div>
         </div>

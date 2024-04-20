@@ -9,3 +9,4 @@ export { DocsFile } from "./DocsFile";
 export { CreateForm } from "./CreateForm";
 export { ProductsComp } from "./ProductsComp";
 export { SliderBanner } from "./SliderBanner";
+export { StatusModal } from "./StatusModal";
